@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #39393d;
+    padding: 10px 0;
+  }
+  .navbar-brand, .nav-link {
+    color: #f3e6e6 !important;
+  }
+  .nav-link:hover {
+    color: #ddb1b1 !important;
+  }
+
+  
+  /* Section Titles */
+  h1, h2 {
+    color: #495057;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  #about h1 {
+    margin-top: 15px; /* ปรับระยะห่างให้ดูสมดุล */
+}
+  
+  h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #2e343095;
+    margin: 10px auto 0;
+  }
+  
+  /* About Section */
+  #about img {
+    border: 5px solid #dee2e6;
+    border-radius: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #about p {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  
+  #about .btn-link {
+    font-size: 18px; 
+    color: #3f3e30 ;
+    font-weight: bold;
+    text-decoration: none;
+}
+  #about .btn-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Sections */
+  section {
+    padding: 50px 0;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  section:nth-child(even) {
+    background-color: #f1f1f1;
+  }
+  
+  /* Lists */
+  ul.list-unstyled li::before {
+    content: '✔ ';
+    color: #0dfd7195;
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  ul.list-unstyled {
+    padding-left: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+  }
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Contact Icons */
+  #contact ul.list-unstyled li::before {
+    content: ''; /* ไม่แสดงอะไรเลย */
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#contact ul li img {
+    margin-right: 10px;
+}
+
+#contact ul li a {
+    color: #5d6167;
+    text-decoration: none;
+}
+
+#contact ul li a:hover {
+    text-decoration: underline;
+}
